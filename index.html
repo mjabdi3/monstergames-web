@@ -1,443 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Monster Game || Index</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+
+  <title>Monsters Game</title>
+  <link rel="canonical" href="https://www.monstersgame.io/">
+  <meta http-equiv="Content-Type" content="text/html">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
+  <link rel="manifest" href="">
+  <link rel="mask-icon" href="" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link href="./assets/styles/main.css" rel="stylesheet" type="text/css">
+  <link href="./assets/styles/bootstrap.css" rel="stylesheet" type="text/css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+
+  <!-- Primary Meta Tags -->
+  <title>Monsters Game</title>
+  <meta name="title" content="Monsters Game">
+  <meta name="description" content="Monsters Game">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.monstersgame.io/">
+  <meta property="og:title" content="Monsters Game">
+  <meta property="og:description" content="Monsters Game">
+  <meta property="og:image" content="">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="">
+  <meta property="twitter:url" content="https://www.monstersgame.io/">
+  <meta property="twitter:title" content="Monsters Game">
+  <meta property="twitter:description" content="Monsters Game">
+  <meta property="twitter:image" content="">
+
+
+
 </head>
+
 <body>
-	<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="">
-        	<div class="form-group">
-        		<input type="text" class="form-control" placeholder="Name">
-        	</div>
-        	<div class="form-group">
-        		<input type="email" class="form-control" placeholder="Email">
-        	</div>
-        	<div class="form-group">
-        		<input type="number" class="form-control" placeholder="Phone no">
-        	</div>
-        	<div class="form-group">
-        		<input type="text" class="form-control" placeholder="Post Code">
-        	</div>
-        	<div class="form-group">
-        		<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-        	</div>
-        	<div class="form-group">
-        		<input type="submit" value="Send">
-        	</div>
-        </form>
-      </div>
+
+   <header class="c-site-head">
+        <a class="c-site-head__logo " href="https://www.monstersgame.io/">
+          <img src="./assets/images/logo.png" alt="Monsters Game">
+        </a>
+
+
+        <div class="animated-big-monster">
+          <img src="assets/images/01.png"/>
+        </div>
+
+
+  </header> 
+
+  <!-- <aside class="c-site-nav | js-site-nav">
+    <div class="c-site-nav__inner | js-site-nav__inner" style="transform: translate(100%, 0%);">
+      <button class="c-site-nav__close | js-site-nav__close">
+        <img src="./assets/img/plus-white.svg">
+      </button>
+      <a class="c-site-nav__logo js-site-link" href="https://www.monstersgame.io/">
+        <img src="assets/images/logo.png" alt="Monsters Game">
+      </a>
+      <ul>
+        <li>
+          <a class="c-site-nav__link | js-site-nav__link is-active" href="https://www.monstersgame.io/"
+            style="transform: translate(0%, -100%);">Home</a>
+        </li>
+        <li>
+          <a class="c-site-nav__link | js-site-nav__link " href="#"
+            style="transform: translate(0%, -100%);">Training</a>
+        </li>
+        <li>
+          <a class="c-site-nav__link | js-site-nav__link " href="#" style="transform: translate(0%, -100%);">About</a>
+        </li>
+        <li>
+          <a href="#" class="c-site-nav__link | js-site-nav__link" style="transform: translate(0%, -100%);">Blog</a>
+        </li>
+      </ul>
+      <button class="c-site-nav__contact | js-site-nav__contact js-open-cmodal"
+        style="opacity: 0; transform: translate(0%, 100%);">
+        <span>Contact</span>
+        <span><svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32.8 32.8"
+            style="enable-background:new 0 0 32.8 32.8;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #101A56;
+              }
+            </style>
+            <path class="st0"
+              d="M32.2,8.8l-1.4,1.4c-0.8,0.8-2,0.8-2.7,0l-5.5-5.5c-0.8-0.8-0.8-2,0-2.7L24,0.6c0.8-0.8,2-0.8,2.7,0L32.2,6
+      C33,6.8,33,8,32.2,8.8z M25.4,15.6L8.2,32.8l-8.2,0v-8.2L17.2,7.4c0.8-0.8,2-0.8,2.7,0l5.5,5.5C26.1,13.6,26.1,14.8,25.4,15.6z">
+            </path>
+          </svg></span>
+      </button>
     </div>
-  </div>
-</div>
-	<header>
-		<div class="menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<nav class="navbar navbar-expand-lg">
-							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="navbar-toggler-icon"></span>
-							  </button>
-							
-							  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-							    <ul class="navbar-nav mt-lg-0">
-							      <li class="nav-item active">
-							        <a class="nav-link" href="index.html"><span>Whitepaper</span></a>
-							      </li>
-							      <li class="nav-item">
-							        <a class="nav-link" href="about-us.html"><span>Roadmap</span></a>
-							      </li>
-							      <li class="nav-item">
-							        <a class="nav-link" href="#"><span>Tokenomics </span>
-							        </a>
-							      </li>
-							      <li class="nav-item logo">
-							        <a class="nav-link" href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></span>
-							        </a>
-							      </li>
-							      <li class="nav-item">
-							        <a class="nav-link" href="gallery.html"><span>Community</span></a>
-							      </li>
-							      <li class="nav-item">
-							        <a class="nav-link" href="gallery.html"><span>How to buy</span></a>
-							      </li>
-							      <li class="nav-item">
-							        <a class="nav-link" href="gallery.html"><span>Audit & KYC</span></a>
-							      </li>
-							      
-							    </ul>
-							    
-							  </div>
-							</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</header>
-	<section class="banner">
-		<div class="container">
-			<div class="row justify-content-lg-start justify-content-md-end align-items-lg-center align-items-md-end">
-				<div class="col-lg-6 col-md-12">
-					<div class="banner-text text-lg-left text-center">
-						<h1>Quis Nostrud Exercitation Laboris Nisi Ut Aliquip</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="" class="btns">Learn More <img src="images/arrow-icon.png" alt=""></a>
-					</div>
-				</div>
-				
-					<img src="images/banner-image.png" alt="" class="img-fluid banner-image" >
-				
-			</div>
-		</div>
-	</section>
-	<section class="about">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<h2>Duis aute irure dolor in reprehenderit</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam,</p>
-				</div>
-			</div>
-			<div class="row ddd">
-				<div class="col-lg-3 col-md-6 col-12 text-center">
-					<img src="images/icon-01.png" alt="" class="img-fluid">
-					<h4>Minim Veniam</h4>
-				</div>
-				<div class="col-lg-3 col-md-6 col-12 text-center">
-					<img src="images/icon-02.png" alt="" class="img-fluid">
-					<h4>Minim Veniam</h4>
-				</div>
-				<div class="col-lg-3 col-md-6 col-12 text-center">
-					<img src="images/icon-03.png" alt="" class="img-fluid">
-					<h4>Minim Veniam</h4>
-				</div>
-				<div class="col-lg-3 col-md-6 col-12 text-center">
-					<img src="images/icon-04.png" alt="" class="img-fluid">
-					<h4>Minim Veniam</h4>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="bathroom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-9 text-center mb-5">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam,</p>
-					<a href="" class="btns">Learn More <img src="images/arrow-icon.png" alt=""></a>
-				</div>
-				
-			</div>
-			
-			<div class="row align-items-center justify-content-lg-around">
-				
-				<div class="col-lg-5 text-xl-right">
-					<img src="images/01.png" alt="" class="img-fluid">
-				</div>
-				<div class="col-lg-6">
-					<h3>Quis Nostrud Exercitation Laboris Nisi Ut Aliquip</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<a href="" class="btns">Learn More <img src="images/arrow-icon.png" alt=""></a>
-				</div>
-			</div>
-		</div>
-	</section>
+  </aside> -->
 
-	<section class="roadmap">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-9 text-center mb-5">
-					<h2>ROADMAP</h2>
-					<p>Our team is actively working on realization of all stages planned in our roadmap</p>
-				</div>
-				
-			</div>
-			
-			<div class="row align-items-center justify-content-lg-around">
-				
-				
-				<div class="col-lg-6">
-					<h3>THE MASTER'S PATH</h3>
-					<font>Q3 2021</font>
-					<ul>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Retro nostalgia</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Birth of an idea</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Building a team of like-minded people</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Concept project development</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>FAFI character creation</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Website development</p>
-						</li>
-					</ul>
-					<a href="" class="btns">Learn More <img src="images/arrow-icon.png" alt=""></a>
-				</div>
-				<div class="col-lg-5 text-xl-right">
-					<img src="images/monster_3.png" alt="" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section class="roadmap two">
-		<div class="container">
-			<!-- <div class="row justify-content-center">
-				<div class="col-lg-9 text-center mb-5">
-					<h2>ROADMAP</h2>
-					<p>Our team is actively working on realization of all stages planned in our roadmap</p>
-				</div>
-				
-			</div> -->
-			
-			<div class="row align-items-center justify-content-lg-around">
-				
-				
-				
-				<div class="col-lg-5 text-xl-right">
-					<img src="images/monster_7.png" alt="" class="img-fluid">
-				</div>
-				<div class="col-lg-6">
-					<h3>PROBLEM SOLVING</h3>
-					<font>Q4 2021</font>
-					<ul>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Analysis and selection of ILO platform</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Smart contract development</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>KYC</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Promotion</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>Airdrop competition</p>
-						</li>
-						<li>
-							<p><span><i class="fa fa-check" aria-hidden="true"></i></span>NFT competition</p>
-						</li>
-					</ul>
-					<a href="" class="btns">Learn More <img src="images/arrow-icon.png" alt=""></a>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	<section class="three-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-10 text-center mb-5">
-					<h3>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut</h3>
-				</div>
-				<div class="col-lg-4">
-					<div class="item text-center">
-						<div class="img"><img src="images/image-01.png" alt="" class="img-fluid"></div>
-					
-					<div class="text">
-						<h4>Deserunt Mollit</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ipsum sed do eiusmod</p>
-						<a href="">Read More</a>
-					</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="item text-center">
-						<div class="img"><img src="images/image-02.png" alt="" class="img-fluid"></div>
-					
-					<div class="text">
-						<h4>Deserunt Mollit</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ipsum sed do eiusmod</p>
-						<a href="">Read More</a>
-					</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="item text-center">
-						<div class="img"><img src="images/image-03.png" alt="" class="img-fluid"></div>
-					
-					<div class="text">
-						<h4>Deserunt Mollit</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ipsum sed do eiusmod</p>
-						<a href="">Read More</a>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="two-section pb-5">
-		<div class="container">
-			
-			
-			<div class="row align-items-center justify-content-lg-around">
-				
-				
-				<div class="col-lg-6">
-					<h3>Quis Nostrud Exercitation Laboris Nisi Ut Aliquip</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<a href="" class="btns">Learn More <img src="images/arrow-icon.png" alt=""></a>
-				</div>
-				<div class="col-lg-5 text-xl-right">
-					<img src="images/02.png" alt="" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="all-moster">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12 mb-5">
-					<h2>NFT FAMOUS TEN</h2>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-01.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-02.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-03.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-04.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-05.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-06.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-07.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-08.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-09.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-					<div class="items text-center">
-						<div class="image">
-						<img src="images/nft-10.jpg" alt="" class="img-fluid">
-						</div>
-						<a href="" class="btns">Buy Now</a>
-					</div>
-				</div>
-			</div>
-		</div>
+  <main class="o-main | js-smooth" data-router-wrapper>
+    <section class="o-page" data-router-view="home">
+      <div class="c-hero | js-smooth-section">
+        <div class="c-hero__bg">
+          <img src="./assets/img/4_new.png" alt="" class="u-wct | js-parallax js-i-4" data-from='{"yPercent": "0"}'
+            data-to='{"yPercent": "50"}'>
+          <!-- <img src="./assets/img/3_new.png" alt="" class="u-wct | js-parallax js-i-3" data-from="{&quot;yPercent&quot;: &quot;0&quot;, &quot;scale&quot;: &quot;1&quot;}" data-to="{&quot;yPercent&quot;: &quot;60&quot;, &quot;scale&quot;: &quot;1.25&quot;}" style="transform: translate(0%, 0.0003%) translate3d(0px, 0px, 0px);" height="1118"> -->
+          <img src="./assets/img/2_new.png" alt="" class="u-wct | js-parallax js-i-2"
+            data-from='{"yPercent": "0", "scale": "1"}' data-to='{"yPercent": "40", "scale": "1.5"}'>
+          <img class="c-hero__img--1 u-wct | js-i-1" src="./assets/img/1_new.png">
+        </div>
+        <h1 class="c-hero__title o-h1 | js-parallax" data-from='{"alpha": "1"}' data-to='{"alpha": "0"}'>
+          <div class="js-intro-line">Let's Start</div>
+          <div class="js-intro-line">your Monsters</div>
+          <div class="js-intro-line">Journey</div>
+        </h1>
+      </div>
+      <div class="c-intro o-gutter u-bg-dark-blue | js-smooth-section">
+        <div class="c-intro__inner o-row o-row--small">
+          <p class="c-intro__text u-color-white">
+              <span class="c-intro__title o-h3 u-color-blue | js-skew">Hi, How are you?</span>
+  
+            <img class="animated-monster1" src="assets/images/animated-monster.gif"/>
+          </p>
 
-	</section>
-	<footer>
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<img src="images/03.png" alt="" class="img-fluid">
-				</div>
-				<div class="col-lg-6">
-					<h3 class="mb-5">Quis Nostrud Exercitation Laboris Nisi Ut Aliquip</h3>
-					<form action="">
-						<input type="text" placeholder="Your Email:">
-						<button>Send <img src="images/arrow-icon.png" alt=""></button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 text-lg-left">
-						<ul class="d-flex social">
-							<li><a href=""><img src="images/fb-icon.png" alt=""></a></li>
-							<li><a href=""><img src="images/tw-icon.png" alt=""></a></li>
-							<li><a href=""><img src="images/ins-icon.png" alt=""></a></li>
-							<li><a href=""><img src="images/you-icon.png" alt=""></a></li>
-						</ul>
-					</div>
-					<div class="col-lg-6 text-lg-right">
-						<p>Copyright &copy; 2021 <span>Home Reps</span>.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
+          <h2 class="c-intro__title o-h3 u-color-light-blue | js-skew" style="padding-bottom: 50px;">
+            Monsters Game is created with love and passion on the Binance Smart Chain. It is more than an NFT, it lets you collect, play and even earn from the monsters.
+          </h2>
+        </div>
+      </div>
+
+      <div class="c-intro o-gutter u-bg-dark-blue | js-smooth-section"
+       style="background:  linear-gradient(0deg,  rgba(255,255,255,1) 0%, rgba(224,255,208,1)  100%); position: relative;"       
+       >
+
+       <img class="howtoplay-bg" src="assets/img/2_new_tp.png"/>
+
+        <div class="c-intro__inner o-row o-row--small">
+          <h2 class="c-intro__title o-h3 u-color-title | js-skew" style="padding-bottom: 30px;">
+             How to Play?
+            <img class="animated-howtoplay" src="assets/images/monster_3.png" style="max-width: 500px; padding-top: 30px; padding-right: 100px;"/>
+          </h2>
+
+          <p class="c-intro__text_2" style="text-align: justify;font-weight: 500;">
+            When you collect and purchase a Monster, you will have access to Monster’s unique gaming platform, where you can compete with other collectors. Each Monster begins with 10 points, which you will be required to split them among 5 critical skills: Passion Ray, Brawn, Thrust, dexterity, and Rara Avis. 
+            You can take part in battles with other users in multiple game modes, from 1v1, 2v2 and 5v5 clashes. Monster Game’s Tournament events, Arcade Games, and exploring Monster Universe in the Metaverse.            
+          </p>
+        </div>
+
+        <div class="text-remember">
+          Remember you can go around and use all your skills in each round of combat, you only get to use one skill per round. 
+        </div>
+      </div>
+
+      <div class="c-items c-items--dark">
+        <section class="c-item c-item--automation c-item--dark o-gutter | js-smooth-section">
+          <div class="c-item__intro | js-parallax" data-speed="0.9" data-from='{"y": "0"}' data-to='{"y": "200"}'>
+            <div class="c-item__intro-right">
+              <span>Monster's Attributes</span>
+              <span class="c-item__intro-arrow"></span>
+            </div>
+          </div>
+
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <!-- <div class="c-item__num">1</div> -->
+              <figure class="c-item__img | js-bm" data-name="Passion Ray">
+                <img class="animated-passion" src="assets/images/01.png"/>
+              </figure>
+            
+              <div class="c-item__content">
+                <!-- <div class="c-item__icon c-icon u-bg-orange-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                    height="45" viewBox="0 0 45 45">
+                    <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="45" height="45"
+                      xlink:href="data:img/png;base64,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" />
+                  </svg>
+                </div> -->
+                <h1 class="c-item__title u-color-blue-light">Passion Ray</h1>
+                <p class="c-item__text u-color-white">
+                  Will measure the extend of your Monster’s Passion
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-item c-item--cloud c-item--dark o-gutter | js-smooth-section">
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <!-- <div class="c-item__num">2</div> -->
+              <figure class="c-item__img | js-bm" data-name="Brawn">
+                <img class="animated-brawn" src="assets/images/02.png"/>
+              </figure>
+              <div class="c-item__content">
+                <!-- <div class="c-item__icon c-icon u-bg-blue-light">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52"
+                    height="29" viewBox="0 0 52 29">
+                    <image id="Vector_Smart_Object2" data-name="Vector Smart Object2" width="52" height="29"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAdCAYAAADl208VAAAD4ElEQVRYhdWYa4iWRRTHf/valTViqZ2IwpqIMqoVu0CWSgRRUNGyUhgOpRB+CAv8kNFFyj4V9SGIIJXsQyOFUFEWXYgoW7UQN1i6CFFD5KWmtJXabLUbpz2rz86M77vX9u0Pz4dnzjkz8585c+acaWGSYKw7BrgBuBa4CjgTOAX4C9gHfAV0Axtj8N0TNYsJJ2SsOxG4G7gHOCNTKONLYBWwIQb/d1FjhJhQQsa6K4AXgHMz4ciwCbg9Bv/tlBMy1i0CngeOzYSjw0/AjTH4T8ZiXMtaxgBj3ULAF8gcBNYDtwBnAScArcD5wGLgbSB1sVOBd411l4xlLuPeIWPdbGArcHwiekXOUQx+V2Y03F4m/ixweSL6TojH4A9kRnVQl5CxbpoOJN/ZgPz/AnwDbAG+Bj4FLkpMV8Tgn8g6PAqMdccBa4A7Eo15o42ARULGupOB5cBS4PRM4Qh2FSLZwzH4RzPNBtDF2wB0qeZ+cdMY/P76lg0IGes6dbXaM+3G2KyrOqbQqzslizgDWBeD35EpNUBL0uEK4PH6JnUxJwb/cT2F0cJYJ65+vy6weMR24K0Y/A+lrg4TMtYtA57ONAYj1Qd6VvZqx3OAuYleTwz+0sx6/IQ+Ay5Mmv9U93wwBh+qghY1mgVsK4Td1cAjMfjvCwOdp7vZqXdHVwz+o2xG4yMj6dPvGoxK6AfujMG/lBL6EJhfMZB8y8XgXyx0kg4q98pADP6PTDgBMNatlUk36GlpDH7tv4Q0XdmaKNwbg38yM5sCGOta1MVnquvdqoluFeKC82PwW4SQnJtlFeEXwKzJWvHxQiPhSuChpKvPgQ5JfeYlguealYwgBn8wBr9S78kqZPduqulWVvF+1ksTIgb/lN57VSysFXKwLKI1MZ5JpnZlTcNiFW3/I0Lbkv8ZQmh30jg7M2te9KczqxVCdleTk6jiguS/Twi9kzR2GuvScqBZcVsyr56aFmJ7K42SZqzXEqJpYayTvHFJMr+N0/r7eg+1tnUMANdXBKcBN7e2dfT09/XubDZSSuZ1oLroUjctHsrlZFfeA67OrAdj/RtAL7AH2BmD/zHTGj5gu74doNn6b5lSGQdi8AMlibFuOnAxsEhrpjSRXi53U7V8aNdLtdH5keLtgRj8Y4VB5RHkTeCazGpy8SqwQArLw68+uupzVVgPsgirjHWl56oFU0DmZckQhqrkYc9YUr/H4Lu0xtmemR7Bvhj8oax10I//K/wM3CVPZJLfDY3Z6NVHfPY64DLgHD0X8i59n6TqBX3pT4o+CacnjYCYnIujFW8liBf1AK/JC20M/tdhSsA/UZMemmxwCEUAAAAASUVORK5CYII=" />
+                  </svg>
+                </div> -->
+                <h1 class="c-item__title u-color-blue-light">Brawn</h1>
+                <p class="c-item__text u-color-white">
+                  Will make sure your Monster has more power than brains
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-item c-item--docker c-item--dark o-gutter | js-smooth-section">
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <!-- <div class="c-item__num">3</div> -->
+              <figure class="c-item__img | js-bm" data-name="Thrust">
+                <img class="animated-thrust" src="assets/images/03.png"/>
+              </figure>
+              <div class="c-item__content">
+                <!-- <div class="c-item__icon c-icon u-bg-orange">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                    height="48" viewBox="0 0 45 48">
+                    <image id="Vector_Smart_Object5" data-name="Vector Smart Object5" width="45" height="48"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAYAAACFUvPfAAAFaUlEQVRoge2aeajVRRTHPz7NbLNCHSWonApbLMug1QTtj7Jsw/4pmwoMtNW0xRYzM9tNrCjJMCqbMsqkoqgIMSiibBOKFss3lYE5pWm0aC4vjvdc3q87v7t57/MZ9P3vzffMzPfNb+bMOWduF5oIY93hwERgJNAXWAW8BsyKwX/erJmaItpYtx9wO3BRmTHbgHnArTH4HxK2TuRNUI/YnsBU4Apg58QgxQbgEeDuGPwvCVsjGhW9CDg5IapjHTBDt82f2020sa4F2JwQBUH3AQuBUcAkYM/EqoCfgGnA3Bj8poQtg0ZXejEwTP9cn/n0qzM2vYCbdAv1SAYp4BtgMrAgBt+WsCVoVLSs4BhgV+DpSodMD+s0PawtiUEBHwE3xuAXJUwGZUUb646W0w4cA7wJXBaD35AY1glj3UD5GsCZFXq+BdwQg/80YfJEG+sOAqYD55VQ42LwjyUjbLv4IcC9wJCEbMd8YEoMfnmuaGNdP+AWYCywU9IdJsXgZyStjYs/C7gLGJiQBWwEZLGmx+BXbRVtrJP9+BBwQYWD8i1wUrFTBwhv0b0uF9S+iUEBctA9cLWIbgVsYlLAal2F2TH49QnbZBjreqiXEW/Tq8zoQUTnuZgt4g2ACTH4tQnb8eL3Ah4EXJ6nSRoy7RcDTxrrDkvYDoR6l6cqucZyK53FZg12psbgVyRsk1CjH69ZdBGypx/WG29Nwm4jarwxq4q+E7gE6JdYFyCxxT2y52LwfyVsjTDW7aKxd7XYZK664oqixZNI2DgBuB7omQxVwEoNS5+oJ9gx1nXTq39alYWRO+EBoI94jKqiY/Df6QS9gZv103VPhi5gmdosrBTsGOvkIjtXv+SAxKAACRNmi5stxtvGuv6loitueOkYg79GJ5mnGUgphFsAvG+sG56whYkl5v4AeKGM4Db1GANkvmoJQsWVzpn8CA12RiZkO16XlY/BLzXWDVb7UxOrdrwqB7FcDpm30t0SqwqIwX8GnGGsG6rBzgk51qcBI4x13wP75wVlivc0kns3YaqgLtFFxODfAU401p2j1/yhJSYitH/SsYAv9Eu8nDD5WKfbp/jPr624p2sQ/xIwSF3kj4nBv7FCvcagOgTLHL/qQRcPJS52fF17uhLU716psXg2M5dLaYqkYk3w65ti8BubJjozuGQbR2WalsbgByeGDaCh7dFZ+F90R0Kzm63YJpfXCYIvlyDNWCfX/NgdXrTWViSH7QrsIUnuf2F77K2Ci+idJ3pHW/2upQ0i+u+StkrFk87A8SVzbuqmIePQTOMcjaxmxuB/7yylxrrdgeskqCqhlrRo3peFXMG3AcuNdVcZ68oF/x0ltruxbjzQqplRad44uyUG/zzwXNIbjJ7aL411o7N+soPEthjrpMr1ldY8+iRG8CLwbFHIhcD9ZYrkBwDPAB8b605J2OYIHgF8omWvvGqX6JoJnC8pXZeSzodoDjcq6daOxRq8f5gwdQZMxrpjNZkYlpDtkNWdHIP/utiSm1UY647TMkG1wSSYX1avaGPdwZo8VFqct3VxlpQSuaIzg5+ugx+ZkAXIZ3tcDm4MfmU10ca6ffSQj8nzv0V7zRnfSJhaRNMeqIzW4L5cCiXB/SytVSwuFQ0M16LMxBxvUIQkr5IszI/Bb0nYekRnxIvru1QH7p0YFLBG87lsmVbKxS16HefhZ12QOTH40osuF3U/FKnTl8rTtcBuiUHt+EO/TN2XWCPviH21xjauzHNHOchzxKPAHTH4WMamIhp+GzfWHZh5WKo0Xlvm4ac1Yben6CK0miRuMu8CEk8gHkEOZcNo6k8nBMa6s7XuJ9XW3+S2jcG/0rQJgH8A6IrElYFOw8MAAAAASUVORK5CYII=" />
+                  </svg>
+                </div> -->
+                <h1 class="c-item__title u-color-blue-light">Thrust</h1>
+                <p class="c-item__text u-color-white">
+                  Is it a rabbit? <br/> Is it a turtle? <br/> Or is it a Monster? <br/> This is where speed comes to play
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-item c-item--docker c-item--dark o-gutter | js-smooth-section">
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <!-- <div class="c-item__num">4</div> -->
+              <figure class="c-item__img | js-bm" data-name="Dexterity">
+                <img class="animated-dexterity" src="assets/images/monster_7.png"/>
+              </figure>
+              <div class="c-item__content">
+                <!-- <div class="c-item__icon c-icon u-bg-orange">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                    height="48" viewBox="0 0 45 48">
+                    <image id="Vector_Smart_Object5" data-name="Vector Smart Object5" width="45" height="48"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAYAAACFUvPfAAAFaUlEQVRoge2aeajVRRTHPz7NbLNCHSWonApbLMug1QTtj7Jsw/4pmwoMtNW0xRYzM9tNrCjJMCqbMsqkoqgIMSiibBOKFss3lYE5pWm0aC4vjvdc3q87v7t57/MZ9P3vzffMzPfNb+bMOWduF5oIY93hwERgJNAXWAW8BsyKwX/erJmaItpYtx9wO3BRmTHbgHnArTH4HxK2TuRNUI/YnsBU4Apg58QgxQbgEeDuGPwvCVsjGhW9CDg5IapjHTBDt82f2020sa4F2JwQBUH3AQuBUcAkYM/EqoCfgGnA3Bj8poQtg0ZXejEwTP9cn/n0qzM2vYCbdAv1SAYp4BtgMrAgBt+WsCVoVLSs4BhgV+DpSodMD+s0PawtiUEBHwE3xuAXJUwGZUUb646W0w4cA7wJXBaD35AY1glj3UD5GsCZFXq+BdwQg/80YfJEG+sOAqYD55VQ42LwjyUjbLv4IcC9wJCEbMd8YEoMfnmuaGNdP+AWYCywU9IdJsXgZyStjYs/C7gLGJiQBWwEZLGmx+BXbRVtrJP9+BBwQYWD8i1wUrFTBwhv0b0uF9S+iUEBctA9cLWIbgVsYlLAal2F2TH49QnbZBjreqiXEW/Tq8zoQUTnuZgt4g2ACTH4tQnb8eL3Ah4EXJ6nSRoy7RcDTxrrDkvYDoR6l6cqucZyK53FZg12psbgVyRsk1CjH69ZdBGypx/WG29Nwm4jarwxq4q+E7gE6JdYFyCxxT2y52LwfyVsjTDW7aKxd7XYZK664oqixZNI2DgBuB7omQxVwEoNS5+oJ9gx1nXTq39alYWRO+EBoI94jKqiY/Df6QS9gZv103VPhi5gmdosrBTsGOvkIjtXv+SAxKAACRNmi5stxtvGuv6loitueOkYg79GJ5mnGUgphFsAvG+sG56whYkl5v4AeKGM4Db1GANkvmoJQsWVzpn8CA12RiZkO16XlY/BLzXWDVb7UxOrdrwqB7FcDpm30t0SqwqIwX8GnGGsG6rBzgk51qcBI4x13wP75wVlivc0kns3YaqgLtFFxODfAU401p2j1/yhJSYitH/SsYAv9Eu8nDD5WKfbp/jPr624p2sQ/xIwSF3kj4nBv7FCvcagOgTLHL/qQRcPJS52fF17uhLU716psXg2M5dLaYqkYk3w65ti8BubJjozuGQbR2WalsbgByeGDaCh7dFZ+F90R0Kzm63YJpfXCYIvlyDNWCfX/NgdXrTWViSH7QrsIUnuf2F77K2Ci+idJ3pHW/2upQ0i+u+StkrFk87A8SVzbuqmIePQTOMcjaxmxuB/7yylxrrdgeskqCqhlrRo3peFXMG3AcuNdVcZ68oF/x0ltruxbjzQqplRad44uyUG/zzwXNIbjJ7aL411o7N+soPEthjrpMr1ldY8+iRG8CLwbFHIhcD9ZYrkBwDPAB8b605J2OYIHgF8omWvvGqX6JoJnC8pXZeSzodoDjcq6daOxRq8f5gwdQZMxrpjNZkYlpDtkNWdHIP/utiSm1UY647TMkG1wSSYX1avaGPdwZo8VFqct3VxlpQSuaIzg5+ugx+ZkAXIZ3tcDm4MfmU10ca6ffSQj8nzv0V7zRnfSJhaRNMeqIzW4L5cCiXB/SytVSwuFQ0M16LMxBxvUIQkr5IszI/Bb0nYekRnxIvru1QH7p0YFLBG87lsmVbKxS16HefhZ12QOTH40osuF3U/FKnTl8rTtcBuiUHt+EO/TN2XWCPviH21xjauzHNHOchzxKPAHTH4WMamIhp+GzfWHZh5WKo0Xlvm4ac1Yben6CK0miRuMu8CEk8gHkEOZcNo6k8nBMa6s7XuJ9XW3+S2jcG/0rQJgH8A6IrElYFOw8MAAAAASUVORK5CYII=" />
+                  </svg>
+                </div> -->
+                <h1 class="c-item__title u-color-blue-light">Dexterity</h1>
+                <p class="c-item__text u-color-white">
+                  Can your Monster juggle knifes? While that is not important, the fact he can move around like “Bush Baby” will come in hand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-item c-item--docker c-item--dark o-gutter | js-smooth-section">
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <!-- <div class="c-item__num">5</div> -->
+              <figure class="c-item__img | js-bm" data-name="Rara Avis">
+                <img class="animated-rara" src="assets/images/image-02.png"/>
+              </figure>
+              <div class="c-item__content">
+                <!-- <div class="c-item__icon c-icon u-bg-orange">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                    height="48" viewBox="0 0 45 48">
+                    <image id="Vector_Smart_Object5" data-name="Vector Smart Object5" width="45" height="48"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAYAAACFUvPfAAAFaUlEQVRoge2aeajVRRTHPz7NbLNCHSWonApbLMug1QTtj7Jsw/4pmwoMtNW0xRYzM9tNrCjJMCqbMsqkoqgIMSiibBOKFss3lYE5pWm0aC4vjvdc3q87v7t57/MZ9P3vzffMzPfNb+bMOWduF5oIY93hwERgJNAXWAW8BsyKwX/erJmaItpYtx9wO3BRmTHbgHnArTH4HxK2TuRNUI/YnsBU4Apg58QgxQbgEeDuGPwvCVsjGhW9CDg5IapjHTBDt82f2020sa4F2JwQBUH3AQuBUcAkYM/EqoCfgGnA3Bj8poQtg0ZXejEwTP9cn/n0qzM2vYCbdAv1SAYp4BtgMrAgBt+WsCVoVLSs4BhgV+DpSodMD+s0PawtiUEBHwE3xuAXJUwGZUUb646W0w4cA7wJXBaD35AY1glj3UD5GsCZFXq+BdwQg/80YfJEG+sOAqYD55VQ42LwjyUjbLv4IcC9wJCEbMd8YEoMfnmuaGNdP+AWYCywU9IdJsXgZyStjYs/C7gLGJiQBWwEZLGmx+BXbRVtrJP9+BBwQYWD8i1wUrFTBwhv0b0uF9S+iUEBctA9cLWIbgVsYlLAal2F2TH49QnbZBjreqiXEW/Tq8zoQUTnuZgt4g2ACTH4tQnb8eL3Ah4EXJ6nSRoy7RcDTxrrDkvYDoR6l6cqucZyK53FZg12psbgVyRsk1CjH69ZdBGypx/WG29Nwm4jarwxq4q+E7gE6JdYFyCxxT2y52LwfyVsjTDW7aKxd7XYZK664oqixZNI2DgBuB7omQxVwEoNS5+oJ9gx1nXTq39alYWRO+EBoI94jKqiY/Df6QS9gZv103VPhi5gmdosrBTsGOvkIjtXv+SAxKAACRNmi5stxtvGuv6loitueOkYg79GJ5mnGUgphFsAvG+sG56whYkl5v4AeKGM4Db1GANkvmoJQsWVzpn8CA12RiZkO16XlY/BLzXWDVb7UxOrdrwqB7FcDpm30t0SqwqIwX8GnGGsG6rBzgk51qcBI4x13wP75wVlivc0kns3YaqgLtFFxODfAU401p2j1/yhJSYitH/SsYAv9Eu8nDD5WKfbp/jPr624p2sQ/xIwSF3kj4nBv7FCvcagOgTLHL/qQRcPJS52fF17uhLU716psXg2M5dLaYqkYk3w65ti8BubJjozuGQbR2WalsbgByeGDaCh7dFZ+F90R0Kzm63YJpfXCYIvlyDNWCfX/NgdXrTWViSH7QrsIUnuf2F77K2Ci+idJ3pHW/2upQ0i+u+StkrFk87A8SVzbuqmIePQTOMcjaxmxuB/7yylxrrdgeskqCqhlrRo3peFXMG3AcuNdVcZ68oF/x0ltruxbjzQqplRad44uyUG/zzwXNIbjJ7aL411o7N+soPEthjrpMr1ldY8+iRG8CLwbFHIhcD9ZYrkBwDPAB8b605J2OYIHgF8omWvvGqX6JoJnC8pXZeSzodoDjcq6daOxRq8f5gwdQZMxrpjNZkYlpDtkNWdHIP/utiSm1UY647TMkG1wSSYX1avaGPdwZo8VFqct3VxlpQSuaIzg5+ugx+ZkAXIZ3tcDm4MfmU10ca6ffSQj8nzv0V7zRnfSJhaRNMeqIzW4L5cCiXB/SytVSwuFQ0M16LMxBxvUIQkr5IszI/Bb0nYekRnxIvru1QH7p0YFLBG87lsmVbKxS16HefhZ12QOTH40osuF3U/FKnTl8rTtcBuiUHt+EO/TN2XWCPviH21xjauzHNHOchzxKPAHTH4WMamIhp+GzfWHZh5WKo0Xlvm4ac1Yben6CK0miRuMu8CEk8gHkEOZcNo6k8nBMa6s7XuJ9XW3+S2jcG/0rQJgH8A6IrElYFOw8MAAAAASUVORK5CYII=" />
+                  </svg>
+                </div> -->
+                <h1 class="c-item__title u-color-blue-light">Rara Avis</h1>
+                <p class="c-item__text u-color-white">
+                  Owning a monster is like owning a rare bird, so it matters how rare your monster is as
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <!-- <figure class="c-ill c-ill--2 | js-smooth-section">
+        <img src="assets/img/ill22.png"
+          alt="">
+      </figure> -->
+      <!-- <div class="c-items c-items--light">
+        <section class="c-item c-item--monitoring o-gutter | js-smooth-section">
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <div class="c-item__num">05</div>
+              <figure class="c-item__img | js-bm" data-name="monitoring"></figure>
+              <div class="c-item__content">
+                <div class="c-item__icon c-icon u-bg-blue-light">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52"
+                    height="49" viewBox="0 0 52 49">
+                    <image id="Vector_Smart_Object6" data-name="Vector Smart Object6" width="52" height="49"
+                      xlink:href="data:img/png;base64,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" />
+                  </svg>
+                </div>
+                <h1 class="c-item__title">Monitoring & security</h1>
+                <p class="c-item__text u-color-text">
+                  One of our passions is monitoring. We have developed custom monitoring tools to keep you informed
+                  about your business decisions and infrastructure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-item c-item--training c-item--reverse o-gutter | js-smooth-section">
+          <div class="o-row">
+            <div class="c-item__inner o-gutter | js-skew">
+              <div class="c-item__num">06</div>
+              <figure class="c-item__img | js-bm" data-name="training"></figure>
+              <div class="c-item__content">
+                <div class="c-item__icon c-icon u-bg-orange">
+                  <svg height="49" viewBox="0 0 51 49" width="51" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image height="49" width="51"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAxCAYAAAB3aZEhAAAE9klEQVRoge2aa4hWRRjHf7tud21d2wa3iJrCRDe7WEQXgiKLMIoSDYoTXT7YRSRJgj5EF8EgiHItIojoNsh2EZJKu0llFyy7aNZK2TZZFjVptW5bytpuPPS8cjhz3nfXd9+NPYv/T++Zd+aZ8595nmfmzH/qqABjkyZgBnAOcDJggRZgjLbaCWwBvgbWAW8Ba4N3u8tb/Q/GJvXAKWr/NGAKcDQwNlXtF+Bb4HPgA+D14N3PkTFFRMbYZD9gFnCddjQmalUZ24FngUeDdxtz7E8C5gJXAUdUtBSjH3gXeApYFrzbmUvG2OQg4Abgtio6KYfXgLuDd2uNTWQW7gIuzRvEKvAr8ADQFrz7ew8ZY5MrgPuBo2pEIost6kLDgZ+AhcG79jpjkweBBRU6EdZvA+8DG7Xx74C44wTgOGA6cB5wUtR6YEi8rQY+BjqBbUAP0KTx2QqcCZwPHFrB2hIh0ws0RH/Be+L3wIvBu57o3xwYmxwLXAPcBBwe19gDGYzHgSeCdx3RvzkwNjkAmAncrLGcxW4h058pfAe4Xfw8qj5IaPwJoUXAIalWuySGgIeDd38Owb54wn1ZUnlkmoJ3f0QWqut0KTA/VfRY8G5uVLE62+N1hvegPqpVW/RlrP01nJ0NN5n/FaOeTDaGCgMh82nqZTuDd11FJSPryxzgTv29KKpRIDQE72RXem2RSZSQFzOFxegjY2zSamxSzSZxRKHe2GQx8AWw3thkSaHJALemnucbmxwY1SoIhEz65bPPhSMzarCPzEhFkclEG+LCktENcWeqaEPeQUaRcIlukuVQ5p5CkwnebQKuLD3vSwAjFaOKTKFjxthEDuGXagKYV1gyxiYitTwNNGrRk0V2s3EpIoKWAWfG2EQaTAOOAZrVQKNO7Q7VSeQc4avg3Q+RgQpQ9ex4YLKe+JdsHwzIEbEsjD8Cm4GO4N2u8tbyz5onAqfribvICJOiVuUhst0a4GVgJXAHcEuqdhvwkCpzFwJnZGS/ShBpcT2wCnhFCW4fiExP5uS+WvTrzKVdIciE1MA2SuSwdEFezNSCCKrKNWbKakWELBH2IjXLaf43Kud16ezJF+l4fcEpQ/xClfjo0NEW+306EKLMiYB1ZNQiBw36otkZEhf5CHgJeEPkv5IImgdNkxJbZ+nmb8YAsbBN/V7sfxi82xrVSMHYZIJKjRJnFwNTo0rQLzEjufrqVCcizz0SvPs+qj5IqGQnQb4QODXVSgboXkkQwbt/hmBfst+NKjk2afEzdTqqM3WWVmW19aHC2OQC4HJgefBudY1ti9x4kWa6lWX1eD1ymq6uM1l9d6ImiHGaqbrUz2UWvxSXkZsagxkQYxNZV87WPrLrTIOq3GJ7q65jn6n9zcG76CuT7OUCY5NmVQUuA84F9o9aDIyS1L4ceD54tyNlf6p+f4j9E6qwjUr3Em/PBe/ezCVjbCIr/CeaQWoF0TDbddZmq55fSywI3rWV7KVT8+waE0G3JddHpbXDHN1VRGTyslef3spYp9uH74BudaWx6t/i6yfq7Yxpe3kvplu9YQMgn8C/6ZrTq7cxmvUmVatufVoy7TelH9JkXgAWay6XKyArgFeDd93RK5SBsYnRdWCWZsi8HYZsTJfpGrMmeNcb1ShvXzalso5J4vBZpa8Wt4vKdSwXf2STOU8Ticyq3M5oH2j3WxWAfwE2pEt8XUfyQgAAAABJRU5ErkJggg==" />
+                  </svg>
+                </div>
+                <h1 class="c-item__title">Training</h1>
+                <p class="c-item__text u-color-text">
+                  56K.Cloud’s training program provides hands-on training using real-world examples and use cases. Our
+                  Training program covers Cloud, Containers, and DevOps.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> -->
+
+
+
+
+
+      <div class="c-cos o-gutter">
+        <div class="c-cos__inner o-row | js-smooth-section">
+
+          <div class="text-remember" >
+            Monster Ecosystem
+          </div>
+          <div class="text-ecosystem">
+              Monster ecosystem is a unique take on Play2Earn. </br/>
+              Our concept brings the gameplay experience to the Monster Metaverse. Monsters Game will be traded on decentralised
+              exchanges and will have an open-source marketplace built into the ecosystem.          
+          </div>
+
+          <section class="all-moster">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 mb-5">
+                  <h2 class="text-nft">NFT MONSTERS TEN</h2>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-01.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-02.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-03.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-04.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-05.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-06.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-07.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-08.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-09.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="items text-center">
+                    <div class="image">
+                    <img src="assets/images/nft-10.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!-- <a href="" class="btns">Buy Now</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </section>
+
+          <div class="text-remember" >
+            Monsters Game on Metaverse
+          </div>
+          <div class="text-ecosystem">
+            In order to counter big companies from farming your data, we have introduced a way that allows you to enjoy your time
+            on the Metaverse and make sure you get something in return for doing what you enjoy. Additionally, since the same big
+            companies tend to keep all the profit, we have made sure that we are placed in a open source marketplace.
+          </div>
+
+
+          <div id="roadmap-section" class="roadmap-bg">
+
+   
+          <div class="roadmap">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 text-center mb-5">
+                  <h2 class="text-roadmap">ROADMAP</h2>
+                  <p style="font-size: 1.5rem; opacity: 0.8;">Our team is actively working on realization of all stages planned in our roadmap</p>
+                </div>
+                
+              </div>
+              
+              <div class="row align-items-center justify-content-lg-around">                                
+                <div class="col-lg-6">
+                  <h3 style="color:#8b182b; font-weight: 500;">Start the Journey</h3>
+                  <font>Q1 2022</font>
+                  <ul>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Concept Project Development</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Monsters Character Creation</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Website development</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Social Setup</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Public Presale on PinkSale</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Launch on Pancakeswap</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Active Promotion</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Listing on Coingecko</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Listing on Coinmarketcap</p>
+                    </li>
+                  </ul>
+                  <!-- <a href="" class="btns">Learn More <img src="assets/images/arrow-icon.png" alt=""></a> -->
+                </div>
+                <div class="col-lg-5 text-xl-right">
+                  <img class="animated-howtoplay" src="assets/images/monster_3.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="roadmap">
+            <div class="container">              
+              <div class="row align-items-center justify-content-lg-around">
+                <div class="col-lg-5 text-xl-right">
+                  <img class="animated-thrust" src="assets/images/03.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                  <h3 style="color:#8b182b; font-weight: 500;">Pull the Trigger</h3>
+                  <font>Q2 2022</font>
+                  <ul>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Launch the Beta Version (PVE Mode)</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Active Marketing</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Poocoin Ads</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Promotion</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Airdrop Competition</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>NFT Competition</p>
+                    </li>
+                  </ul>
+                  <!-- <a href="" class="btns">Learn More <img src="assets/images/arrow-icon.png" alt=""></a> -->
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="roadmap">
+              <div class="container">                
+                <div class="row align-items-center justify-content-lg-around">                                
+                  <div class="col-lg-6">
+                    <h3 style="color:#8b182b; font-weight: 500;">Start the battle</h3>
+                    <font>Q3 2022</font>
+                    <ul>
+                      <li>
+                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Launch the GAME (PVE & PVP modes)</p>
+                      </li>
+                      <li>
+                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Launch the NFT E-Marketplace</p>
+                      </li>
+                      <li>
+                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Hire Social Influencers</p>
+                      </li>
+                      <li>
+                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Active on Twitch</p>
+                      </li>
+
+                    </ul>
+                    <!-- <a href="" class="btns">Learn More <img src="assets/images/arrow-icon.png" alt=""></a> -->
+                  </div>
+                  <div class="col-lg-5 text-xl-right">
+                    <img class="animated-roadmapq3" src="assets/images/image-01.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+
+
+        
+          <div class="roadmap two">
+            <div class="container">
+              <!-- <div class="row justify-content-center">
+                <div class="col-lg-9 text-center mb-5">
+                  <h2>ROADMAP</h2>
+                  <p>Our team is actively working on realization of all stages planned in our roadmap</p>
+                </div>
+                
+              </div> -->
+              
+              <div class="row align-items-center justify-content-lg-around">
+                
+                
+                
+                <div class="col-lg-5 text-xl-right">
+                  <img class="animated-dexterity2" src="assets/images/monster_7.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                  <h3 style="color:#8b182b; font-weight: 500;">To the moon</h3>
+                  <font>Q4 2022</font>
+                  <ul>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Join the Metaverse</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>VR Mode</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Build Exclusive Avatars</p>
+                    </li>
+                    <li>
+                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>List on Centralized Crypto-Exchanges (CEX)</p>
+                    </li>
+                  </ul>
+                  <!-- <a href="" class="btns">Learn More <img src="assets/images/arrow-icon.png" alt=""></a> -->
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+                
+        </div>
+
+
+          <!-- <h3 class="c-cos__title o-h4 u-txt-center" style="padding-top: 200px;">You can find us on :</h3>
+          <div class="c-cos__list-wrap">
+            <ul class="c-cos__list">
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "-15"}' data-to='{"yPercent": "15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/e06ae95aaabfc3736c5cdf8be88b970ed50e186e/d94d2/static/companies/amazon.png"
+                    draggable="false" alt="amazon">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "15"}' data-to='{"yPercent": "-15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/4211bb772823bf67c588bb1b560ff0fc5d7e8e2c/bb635/static/companies/dockers.png"
+                    draggable="false" alt="dockers">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "-15"}' data-to='{"yPercent": "15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/fa6e4d66b992e85a4ee2b5844d9d5f0278630af1/2af03/static/companies/exoscale.png"
+                    draggable="false" alt="exoscale">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "15"}' data-to='{"yPercent": "-15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/f4450239031cca0709206c5dda7bf652e4547de5/694b0/static/companies/gruntworks.png"
+                    draggable="false" alt="gruntworks">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "-15"}' data-to='{"yPercent": "15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/1caeeef4457f4fd9b3fb2ce01d51183cdfbcec93/de5ed/static/companies/medispend.png"
+                    draggable="false" alt="medispend">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "15"}' data-to='{"yPercent": "-15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/3860acb4b71ea5721e48544a9ae6f65ebf8da4d5/562f7/static/companies/partnersgroup.png"
+                    draggable="false" alt="partnersgroup">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "-15"}' data-to='{"yPercent": "15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/b335428108821254540d7c31cefaa470c9654c9a/31466/static/companies/sml.png"
+                    draggable="false" alt="sml">
+                </div>
+              </li>
+              <li>
+                <div class="js-parallax" data-from='{"yPercent": "15"}' data-to='{"yPercent": "-15"}'>
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/4868df900e6805e67b7793fce6a5c804b8a9639a/1c484/static/companies/swisscom.png"
+                    draggable="false" alt="swisscom">
+                </div>
+              </li>
+            </ul> -->
+            <!-- <button type="button" class="c-cos__btn | js-open-cmodal">
+              <span class="c-btn | js-btn">
+                <div class="c-btn__inner">
+
+                  <span class="c-btn__title">
+                    <span class="c-btn__item c-btn__item--first">Contact us</span>
+                    <span class="c-btn__item c-btn__item--last">Contact us</span>
+                  </span>
+
+                  <span class="c-btn__svg">
+                    <svg width="10" height="10" viewBox="0 0 10 10" preserveAspectRatio="none">
+                      <path class="js-path" d="M 10,10 L 10,10 C 10,10 10,10 5,10 C 0,10 0,10 0,10 L 0,10 Z"></path>
+                    </svg>
+                  </span>
+
+                </div>
+              </span>
+            </button> -->
+          </div>
+        </div>
+      </div>
+      <div class="c-see-more | js-smooth-section">
+        <div class="c-see-more__bg">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/c2b898c15589dec9f89d97348435220600aa23b2/4fe53/static/footer/s1.png">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/cf8a2fcc7fdda72fb5aa7893b4ad312005e29019/662e3/static/footer/s2.png">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/0092e77026aba86b0824c47bc5e231e6278c6b28/3eafe/static/footer/s3.png">
+        </div>
+
+        <div class="c-see-more__monitor">
+          <div class="c-see-more__monitor-inner">
+            <div class="c-see-more__monitor-video">
+              <img src="assets/images/banner-image.png"/>
+            </div>
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/f1c414091810ec2a3519f00ccbcf8084dc3fb0eb/b63dd/static/monitor.png"
+              alt="Monitor">
+          </div>
+        </div>
+        <div class="c-see-more__inner o-gutter">
+          <div class="o-row">
+            <div class="c-see-more__content">
+              <h3 class="c-see-more__title o-h2" data-scroll>
+                <div>Do you want </div>
+                <div>to see more?</div>
+              </h3>
+
+              <div style="display: flex; gap:10px">
+                  <input class="email-field" type="text" placeholder="Your Email">
+                  <button class="subscribe-button">Subscribe</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-bg-dark-blue c-index | js-smooth-section">
+        <div class="c-site-foot o-gutter">
+          <div class="c-site-foot__inner o-row u-bg-white">
+            <div class="c-site-foot__content">
+              <h3 class="c-site-foot__title o-h4">
+                Monsters Game is created with love and passion on the Binance Smart Chain. It is more than an NFT, it lets you collect, play and even earn from the monsters.
+              </h3>
+              <a class='c-site-foot__logo' href='https://www.monstersgame.io/'>
+                <img
+                  src="assets/images/animated-monster.gif"
+                  alt="Monsters Game">
+              </a>
+          
+              <hr class="c-site-foot__line">
+              <div class="c-site-foot__bottom">
+                <div class="c-site-foot__social">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="https://d33wubrfki0l68.cloudfront.net/830002f9c26824f0ba8255f6964be1eed1824ef8/760ed/static/footer/twitter.svg">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="https://d33wubrfki0l68.cloudfront.net/a9966f51ebffce979128b3607cebf018da8500f0/45e92/static/footer/in.svg">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="c-site-foot__copyright u-color-text">Copyright (c) 2022, Monsters Game;
+                  all rights reserved</p>
+              </div>
+              <p class="c-site-foot__short">
+                <span class="c-site-foot__by">
+                  <span class="c-site-foot__short-text u-color-text">Design by</span>
+                  <a class="c-site-foot__short-img" href="https://www.monstersgame.io/" target="_blank"
+                    rel="noreferrer"><img
+                      src="assets/images/logo.png"
+                      alt="Monsters Game"></a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="c-pe | js-pe" style="pointer-events: none;"></div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; width: 0; height: 0"></svg>
+  <canvas width="2592" height="1368" class="c-transition-gl js-transition-gl" style="width: 1728px; height: 912px;">
+  </canvas>
+
+
+  <script src="./assets/scripts/gsap.js"></script>
+  <script src="./assets/scripts/animate.js"></script>
+
+
+
 </body>
+
 </html>
