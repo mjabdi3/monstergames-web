@@ -29,7 +29,7 @@ window.onload = (event) => {
 
 
     setTimeout(() => {
-        $(window).trigger('resize');
+        window.dispatchEvent(new Event('resize'));
     }, 5000);
 
 };
