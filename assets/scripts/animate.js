@@ -1,7 +1,7 @@
 
 window.onload = (event) => {
 
-    console.log("Page loaded")
+
 
     let tween0 = gsap.fromTo(".animated-big-monster", {scale:0.5, x:-2000} , { x: 0, scale: 1,  duration: 1, repeat: 0, delay: 2 , ease: "none", paused: false });
     let tween0_1 = gsap.to(".animated-big-monster", { x: 2000, scale: 0.5,  duration: 1, repeat: 0, delay: 4 , ease: "none", paused: false });
@@ -27,6 +27,10 @@ window.onload = (event) => {
 
     let tween9 = gsap.to(".animated-dexterity2", {  x: 100, y: -500, opacity: 0 ,  duration: 3, repeat: -1, yoyo: false, ease: "power3.out", paused: false });
 
+
+    setTimeout(() => {
+        $(window).trigger('resize');
+    }, 5000);
 
 };
 
